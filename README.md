@@ -6,6 +6,9 @@ Built with **Python, FastAPI, LangChain, ChromaDB, Claude, Next.js and TypeScrip
 
 > Demo video: _add your Loom link here_ · Live demo: _add your URL here_
 
+> **Production version:** the [AWS Document Chatbot Starter Kit](https://kimhoang36.gumroad.com/l/phwyiv?utm_source=github&utm_medium=readme&utm_campaign=rag-document-chatbot) adds admin and access passwords, a per-IP rate limit, a daily Claude spend cap with a cost log, Caddy HTTPS, backups, and a one-command AWS deploy (measured: about $10 per 1,000 questions).
+
+
 ## Features
 
 - **PDF upload** with drag and drop, page-aware chunking, and local embeddings (no extra API key)
@@ -137,6 +140,22 @@ docker-compose.yml
 - OCR for scanned PDFs
 - User accounts so each person sees only their own documents
 - Evaluation set to measure answer accuracy over time
+
+## Free version vs the production kit
+
+This repo is the free, open-source version: great for learning and demos. The [AWS Document Chatbot Starter Kit](https://kimhoang36.gumroad.com/l/phwyiv?utm_source=github&utm_medium=readme&utm_campaign=rag-document-chatbot) is the version you can put in front of real users or clients.
+
+| | This repo (free) | [AWS Document Chatbot Starter Kit](https://kimhoang36.gumroad.com/l/phwyiv?utm_source=github&utm_medium=readme&utm_campaign=rag-document-chatbot) |
+|---|---|---|
+| Upload PDFs, cited streaming answers | ✅ | ✅ |
+| Admin and access passwords |  | ✅ |
+| Rate limit per IP and daily spend cap |  | ✅ |
+| Cost log and `/usage` report, cost sheet |  | ✅ |
+| Production Docker Compose with Caddy HTTPS |  | ✅ |
+| One-command AWS deploy and teardown |  | ✅ |
+| Backup, restore and deploy check scripts |  | ✅ |
+
+More production-ready Claude projects: [all starter kits](https://shipready-ai.github.io/?utm_source=github&utm_medium=readme&utm_campaign=rag-document-chatbot).
 
 ## License
 
